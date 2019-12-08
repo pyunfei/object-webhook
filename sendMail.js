@@ -7,14 +7,14 @@ let transporter = nodemailer.createTransport({
     auth: {
         user: '[email protected]',
         // 这里密码不是qq密码，是你设置的smtp授权码
-        pass: 'zpdf0teyhjfbpcaff',
+        pass: '123456',
     }
 });
 
 
 function sendMail(message){
     let mailOptions = {
-        from: '"83687401" <[email protected]>', // 发送地址
+        from: '"stackfei@gmail.com" <[email protected]>', // 发送地址
         to: '[email protected]', // 接收者
         subject: '部署通知', // 主题 
         html:message // 内容主体
