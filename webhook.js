@@ -1,6 +1,6 @@
 let http = require('http');
 let crypto = require('crypto');
-var {spawn} = require('child_process');
+var spawn = require('child_process').spawn;
 // let sendMail = require('./sendMail');
 const SECRET = '123456';
 function sign (data) {
